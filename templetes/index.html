@@ -1,0 +1,484 @@
+<!-- <div class="center">
+    <h1>TOTAL LOAD OF YOUR HOUSE</h1>
+                   <!-- <form action="result">
+                          <input type="number" name="required_watt" placeholder="Enter required watt" required>
+                          <br>
+                          <br> 
+                  
+                          <p>Select Panel Wattage</p>
+                          <input type="radio" name="350_watt">
+                          <label for="radio">350 WATT</label>
+                          <br>
+                          <input type="radio" name="450_watt">
+                          <label for="radio3">450 WATT</label>
+                          <br>
+                          <input type="radio" name="500_watt">
+                          <label for="radio1">500 WATT</label>
+                          <br>
+                          <input type="radio" name="550_watt">
+                          <label for="radio2">550 WATT</label>
+                          <br>
+                          <br>
+                      <br>
+                          <button type="submit" name="divide">Submit</button> 
+                      
+                      </form>     
+
+ -->
+    
+    <!-- </div>
+    
+    <style>
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #a5addb;
+        padding: 10px;
+      }
+    </style> --> 
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+    
+        <div class="left_side_navbar_main">
+            <div class="left_side_navbar row align-items-center">
+                <div class="logo col-md-8">
+                    <img src="assets/images/icon.png" alt="">
+                </div>
+                <div class="left_side_navbar_content col-md-4 gap-2 ">
+                    <div class="nav_socials_icons text-left">
+                        <i class="fa-brands fa-facebook-f mx-2"></i>
+                        <i class="fa-brands fa-instagram mx-2"></i>
+                        <i class="fa-brands fa-linkedin-in mx-2"></i>
+                        <i class="fa-brands fa-twitter mx-2"></i>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+        <div class="main_container_inner">
+            <div class="right_side">
+                <ul class="nav_item">
+                    <li><a href="#"><i class="fa-solid fa-border-all"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-group"></i></a></li>
+                    <li><a href="#"> <i class="fa-solid fa-layer-group"></i>
+                        </a></li>
+    
+                    <li><a href="#"><i class="fa-solid fa-box-open"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-solar-panel"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-server"></i></a></li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-box-open"></i></a></li>
+    
+    
+    
+                </ul>
+            </div>
+            <div class="left_side">
+    
+                <!-- <div class="banner_main">
+                    <div class="heading"><h1>Energize Your Life with CALSO.PK</h1><p>At CALSO.PK, we're on a mission to transform the way you power your life. Our innovative solar energy solutions are designed to put you in control of your energy destiny</p></div>
+                    <div class="banner_img">
+                        <img src="assets/images/banner/banner3.jpg" alt="">
+                        <img src="assets/images/banner/banner2.jpg" alt="">
+                        <img src="assets/images/banner/banner-bg.jpg" alt="">
+                    </div>
+                </div> -->
+    
+                <div class="left_content_main">
+                    <h1>Solar System Price Calculator</h1>
+                    <p>Solar system in Pakistan price calculator by CALSO, offers comprehensive price quotes for your
+                        desired solar solutions.</p>
+                    <p>Please Select Quantity of Appliance.</p>
+                    <div class=" pt-3">
+    
+    
+    
+    
+                        <div class="row">
+                            <div class="appliance-index_heading row">
+                                <div class="appliance_head col-md-4">
+                                    <h4>Appliances</h4>
+                                </div>
+                                <div class="appliance_head col-md-4">
+                                    <h4>Watts</h4>
+                                </div>
+                                <div class="appliance_head col-md-4">
+                                    <h4>Quantity</h4>
+                                </div>
+                            </div>
+    
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Tube Light</p>
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>40W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Energy Savers</p>
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>25W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>LED Bulbs</p>
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>7W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Fans</p>
+    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>100W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>TVs</p>
+    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>250W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>LED TVs 32</p>
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>50W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Washing Machines</p>
+                               
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>800W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Freezers</p>
+                              
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>350W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Refrigerators</p>
+                                   
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>350W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Computers</p>
+                                   
+    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>250W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Water Pumps 1HP</p>
+                                    
+    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>700W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Irons</p>
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>1000W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                       
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Split ACs 1 Ton</p>
+                                    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>1800W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Split ACs 1.5 Ton</p>
+                                   
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>2400W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="2" step="5" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Split ACs 2 Ton</p>
+                                    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>3000W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Split ACs 3.5 Ton</p>
+                                    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>7500W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Split ACs 4 Ton</p>
+                                   
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>8000W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Inverter ACs 1 Ton</p>
+                                    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>1000W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Inverter ACs 1.5 Ton</p>
+                                    
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>1500W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Inverter ACs 2 Ton</p>
+                                   
+                                </div>
+                                <div class="watts col-md-4">
+                                    <p>2000W</p>
+                                </div>
+                                <div class="appliances-field col-md-4">
+                                    <button type="button" class="btn_icons btn_icon_sub">-</button>
+                                    <input aria-label="" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                    <button type="button" class="btn_icons btn_icon_add">+</button>
+                                </div>
+                            </div>
+    
+                            <div class="appliances-content row">
+                                <div class="para col-md-4">
+                                    <p>Total Load (in Watts)</p>
+                                   
+                                </div>
+                                <div class="watts col-md-4">
+                                    
+                                </div>
+                                <div class="appliances-field col-md-4 total_inp_main">
+                                    <button type="button" class="btn_icons btn_icon_sub total_inp_btn">-</button>
+                                    <input readonly aria-label="" class="total_inp" id="fieldname2_1" name="field1" min="0" step="1" type="number"
+                                        value="0">
+                                        <button type="button" class="btn_icons btn_icon_add total_inp_btn">+</button>
+                                </div>
+                            </div>
+               
+                               
+                              
+    
+    
+    
+    
+                        </div>
+                    
+    <div class="quote_btn login_btn">
+        <a href="#" class="hvr-shutter-out-horizontal">Get a Quote</a>
+    </div>
+    
+    
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        </div>
+        <div class="footer_main">
+            <p>
+                Copyright 2019-2024 |..............| All Rights Reserved </p>
+        </div>
+    
+    
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+    
+    </html>
+    
+    
+    
+    
+    <!-- ----------------------------- -->
+    
+    

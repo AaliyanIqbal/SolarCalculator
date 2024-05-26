@@ -1,0 +1,24 @@
+<div class="center">
+    The result is: 
+    <!-- <p>{{panels_required}} : <b>Solar Panel Required</b></p> -->
+    <p>{{panel_pricing}} : <b>Cost Of Panel</b></p>
+
+    <!-- <p>{{house_consumption}} : <b>House Consumption</b></p>     -->
+    <a href="{% url 'home' %}">Go Back</a>
+
+    <ul>
+        {% for data in extracted_data %}
+            <li>{{ extracted_data }}...</li>
+            <li>{{ td_element }}...</li>
+        {% endfor %}
+    </ul>
+
+
+    <style>
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #a5addb;
+        padding: 10px;
+      }
+    </style>

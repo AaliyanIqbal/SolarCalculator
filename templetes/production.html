@@ -1,0 +1,37 @@
+<div class="center">
+    The result is: 
+    <!-- <p>{{panels_required}} : <b>Solar Panel Required</b></p> -->
+    <p>{{solar_kw_production}} : <b>Yearly kWh PRoduction of Solar on day time (Month)</b></p>
+    <p>{{battery_kw_production}} : <b>Yearly kWh PRoduction on Battries on day time (Month)</b></p>
+    <!-- <p>{{house_consumption}} : <b>House Consumption</b></p>     -->
+    
+    <form action="pricing">
+
+      <br>
+      <br> 
+  
+      <p>For Production Cost:</p>
+
+      <br>
+  <br>
+      <button type="submit" name="divide">PRICING</button> 
+  
+  </form>
+
+  </div>
+    <ul>
+        {% for data in extracted_data %}
+            <li>{{ extracted_data }}...</li>
+            <li>{{ td_element }}...</li>
+        {% endfor %}
+    </ul>
+
+    </div>
+    <style>
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #a5addb;
+        padding: 10px;
+      }
+    </style>
