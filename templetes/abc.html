@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Pricing PDF</title>
+    <link rel="stylesheet" href="../static/assets/css/htmlpdf.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            background: #000;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            position: absolute;
+            left: -9999px; /* Move it off-screen */
+        }
+        h1 {
+            color: #2b378e;
+            text-align: center;
+            border-bottom: 1px dashed #2a328b;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #8b4513;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        b {
+            font-weight: bold;
+        }
+        .container1 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 2rem;
+            height: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            background: linear-gradient(159deg, #292b88, #44a8c8);
+        }
+        .icon img {
+            width: 100px;
+            height: 100px;
+            filter: brightness(0.5) invert(1);
+        }
+        .text h2 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #000;
+            margin: 0 auto;
+            width: 100%;
+            border: 1px solid white;
+            background: white;
+            padding: 2px 0;
+        }
+        .text p {
+            margin: 0;
+            font-size: 17px;
+            color: white;
+            margin: 10px 0 0 0;
+            font-weight: 500;
+        }
+        .w100 {
+            background: linear-gradient(112.1deg, rgb(77, 238, 253) 0.7%, rgb(3, 151, 232) 26.1%, rgb(47, 31, 116) 95.7%);
+            animation-fill-mode: forwards;
+            margin-top: 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 1rem;
+            padding: 4px 15px;
+            border: 1px solid #000;
+        }
+        .w100 p {
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+        .w100 label {
+            font-size: 24px;
+            color: orange;
+            font-weight: 600;
+        }
+        .pdf_header_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #fbfbfb, #add8e6);
+            padding: 6px 20px;
+            border-bottom: 1px solid #bfbfbf;
+        }
+        .pdf-contact {
+            display: flex;
+            gap: 1rem;
+        }
+        .pdf-contact i {
+            color: #32549d;
+            font-size: 16px;
+        }
+        .pdf-contact p a {
+            color: #000;
+            font-size: 15px;
+        }
+        .pdf-footer {
+            padding: 20px 20px;
+        }
+        .footer_bottom_txt {
+            font-size: 16px;
+        }
+        .section2 {
+            margin-bottom: 40px;
+        }</style>
+</head>
+
+<body>
+    <div class="container" id="pdfContent">
+        <div class="pdf_header_main"> 
+            <div class="pdf_logo">
+                <img src="static/assets/images/icon.png" alt="Logo" class="logo">
+            </div>
+            <div class="pdf-contact">
+                <p>
+                    <b><i class="fa-solid fa-envelope"></i></b> <a href="mailto:abc@abc.com">abc@abc.com</a>
+                </p>
+                <p>
+                    <b><i class="fa-solid fa-phone"></i></b> <a href="tel:+9233333333">+9233333333</a>
+                </p>
+                <p>
+                    <b><i class="fa-solid fa-globe"></i></b> <a href="#">www.calso.pk</a>
+                </p>
+            </div>
+        </div>
+        <div class="section1">
+            <h1>Requirement</h1>
+            <div class="container1">
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/system.png" alt="System Type Icon"></div>
+                    <div class="text">
+                        <h2>{{panels_required_pdf}}</h2>
+                        <p>On-Grid</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/meter.png" alt="Capacity Icon"></div>
+                    <div class="text">
+                        <h2>{{battries_required_pdf}}</h2>
+                        <p>15 kW</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/solar.png" alt="Structure Icon"></div>
+                    <div class="text">
+                        <h2>{{house_consumption_pdf}}</h2>
+                        <p>Elevated Mild Steel 14 Gauge</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/solar.png" alt="Structure Icon"></div>
+                    <div class="text">
+                        <h2>{{required_inverter_pdf}}</h2>
+                        <p>Elevated Mild Steel 14 Gauge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section1 section2">
+            <h1>Energy Production Calculation</h1>
+            <div class="container1">
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/system.png" alt="System Type Icon"></div>
+                    <div class="text">
+                        <h2>{{ solar_kw_production }}</h2>
+                        <p>On-Grid</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/meter.png" alt="Capacity Icon"></div>
+                    <div class="text">
+                        <h2>{{ battery_kw_production }}</h2>
+                        <p>15 kW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section1">
+            <h1>Pricing Details</h1>
+            <div class="container1">
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/system.png" alt="System Type Icon"></div>
+                    <div class="text">
+                        <h2>{{ panel_pricing }}</h2>
+                        <p>On-Grid</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/meter.png" alt="Capacity Icon"></div>
+                    <div class="text">
+                        <h2>{{ battery_pricing }}</h2>
+                        <p>15 kW</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="static/assets/images/meter.png" alt="Capacity Icon"></div>
+                    <div class="text">
+                        <h2>{{ inverter_pricing }}</h2>
+                        <p>15 kW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w100">
+            <label>Total</label>
+            <p>{{total_cost}}</p>
+        </div>
+        <div class="pdf_header_main pdf-footer"> 
+            <div class="footer_bottom_txt">
+                © Copyright 2021 - 2024 <a href="#">Calso</a> All Rights reserved
+            </div>
+        </div>
+    </div>
+    <button id="downloadPDF">Download PDF</button>
+    <script>
+        document.getElementById('downloadPDF').addEventListener('click', function() {
+            var element = document.getElementById('pdfContent');
+            element.style.position = 'static'; // Make it visible
+            html2pdf().from(element).save().then(() => {
+                element.style.position = 'absolute'; // Hide it again after PDF is generated
+                element.style.left = '-9999px';
+            });
+        });
+    </script>
+</body>
+</html>

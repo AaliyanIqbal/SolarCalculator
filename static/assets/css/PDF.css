@@ -1,0 +1,137 @@
+body {
+    background: #000;
+        font-family: Arial, sans-serif;
+        background-image: url('https://example.com/background-image.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* padding: 30px; */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: auto;
+    }
+ 
+    h1 {
+        color: #2b378e;
+text-align: center;
+border-bottom: 1px dashed #2a328b;
+padding-bottom: 10px;
+    }
+    p {
+        color: #8b4513;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    b {
+        font-weight: bold;
+    }
+
+    .container1 {
+        display: flex;
+justify-content: center;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+gap: 2rem;
+height: 100%;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.card {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: 30%;
+background: linear-gradient(159deg, #292b88, #44a8c8);
+}
+.icon img {
+width: 100px;
+height: 100px;
+filter: brightness(0.5) invert(1);
+}
+.text h2 {
+margin: 10px 0;
+font-size: 20px;
+color: #000;
+margin: 0 auto;
+width: 100%;
+border: 1px solid white;
+background: white;
+padding: 2px 0;
+}
+.text p {
+margin: 0;
+font-size: 17px;
+color: white;
+margin: 10px 0 0 0;
+font-weight: 500;
+}
+
+
+.formLine.pricing {
+display: flex;
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 2rem;
+align-items: revert;
+}
+.w100 {
+background: linear-gradient(112.1deg, rgb(77, 238, 253) 0.7%, rgb(3, 151, 232) 26.1%, rgb(47, 31, 116) 95.7%);
+animation-fill-mode: forwards;
+margin-top: 20px;
+display: flex;
+justify-content: end;
+align-items: center;
+gap: 1rem;
+padding: 4px 15px;
+border: 1px solid #000;
+}
+.w100 p {
+padding: 0;
+margin: 0;
+color: white;
+}
+
+.w100 label {
+font-size: 24px;
+color: orange;
+font-weight: 600;
+}.pdf_header_main {
+display: flex;
+justify-content: space-between;
+/* width: 100%; */
+align-items: center;
+background: linear-gradient(45deg, #fbfbfb, #add8e6);
+padding: 6px 20px;
+border-bottom: 1px solid #bfbfbf;
+
+}
+.pdf-contact {
+display: flex;
+gap: 1rem;
+}
+.pdf-contact i {
+color: #32549d;
+font-size: 16px;
+}
+.pdf-contact p a {
+color: #000;
+font-size: 15px;
+}
+.pdf-footer {
+padding: 20px 20px;
+}
+.footer_bottom_txt {
+font-size: 16px;
+}
+.section2 {
+margin-bottom: 40px;
+}

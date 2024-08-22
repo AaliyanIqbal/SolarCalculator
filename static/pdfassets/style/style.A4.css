@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+input, select{
+  -prince-pdf-form: enable;
+}
+
+
+:root{
+  --font-color: black;
+  --highlight-color: #223189;
+  --secondary-color: #868f95;
+  --header-bg-color: #223189;
+  --footer-bg-color: #BFC0C3;
+  --table-img-bg-color: #BFC0C3;
+  --gap-size: 15px;
+}
+
+@page{
+
+  size:A4;
+  margin:2cm 0 3cm 0;
+
+  @top-left{
+    content:element(header);
+  }
+
+  @bottom-left{
+    content:element(footer);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  margin:0;
+  padding:0cm 2cm;
+  color:var(--font-color);
+  font-family:'Montserrat', sans-serif;
+  font-size:10pt;
+}
+
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+hr{
+  margin: 0.8cm 0;
+  height:0;
+  border:0;
+  border-top:1mm solid var(--highlight-color);
+}
+
+
+header{
+  height:4cm;
+  padding:0 2cm;
+  position:running(header);
+  /* background-color:var(--header-bg-color); */
+}
+
+header .headerSection{
+  display:flex;
+  height:4cm;
+  align-items: center;
+  justify-content:space-between;
+}
+
+header .headerSection:first-child{
+  padding-top:.5cm;
+}
+
+header .headerSection:last-child{
+  padding-bottom:.5cm;
+}
+
+header .headerSection div:last-child{
+  width:35%;
+  /* margin-top:1cm; */
+}
+
+header .headerSection:last-child div:last-child{
+  width:auto;
+}
+
+header .logoAndName{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+header .logoAndName img{
+  width: 110px;
+}
+
+
+
+header h1,
+header h2,
+header h3,
+header p,
+header a{
+  margin:0;
+  color: #000;
+}
+
+header h2,
+header h3{
+  text-transform:uppercase;
+}
+
+header h2{
+  font-size:120%;
+}
+
+.section-heading {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0 30px;
+  color: #223189;
+}
+
+.formLine {
+  display: flex;
+  align-items: flex-start;
+  margin-left: calc(-1 * var(--gap-size));
+  margin-bottom: .5cm;
+  flex-wrap: wrap;
+}
+
+.formLine div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.formLine div img {
+  width: 40%;
+}
+
+.formLine div input {
+  width: 60%;
+  margin: 25px 0 10px;
+  height: 34px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+}
+
+.formLine div label{
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.formLineWrap {
+  flex-wrap: wrap;
+}
+
+.formLine > * {
+  padding-left: var(--gap-size);
+  box-sizing: border-box;
+}
+
+.formLine.pricing {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.formLine.pricing div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formLine.pricing div input{
+  text-align: right;
+}
+
+.lineSubmit {
+  text-align: center;
+}
+
+label{
+  font-weight:bold;
+  color:var(--highlight-color);
+}
+
+label + input[type="text"], label + select {
+  margin-top: 2px;
+}
+
+label.sublabel {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  padding-bottom: 0.25em;
+}
+
+.w100{
+  width: 100%;
+}
+
+.w66{
+  width:66%;
+}
+
+.w50{
+  width:50%;
+}
+
+.w33{
+  width:33%;
+}
+
+.w25{
+  width:25%;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 25px;
+}
+
+select {
+  width: 100%;
+  height: 25px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 4px;
+}
+
+input[type="submit"] {
+  background-color: var(--highlight-color);
+  color:white;
+  font-weight: bold;
+  border:none;
+  padding:5px;
+}
+
+
+aside{
+  -prince-float: bottom;
+  padding:0 2cm .5cm 2cm;
+}
+
+
+aside p{
+  margin:0;
+  column-count:2;
+}
+
+
+footer{
+  height:3cm;
+  line-height:3cm;
+  padding:0 2cm;
+  position:running(footer);
+  background-color:var(--table-img-bg-color);
+  font-size:8pt;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+}
+
+footer a:first-child{
+  font-weight:bold;
+}
